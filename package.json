@@ -1,0 +1,35 @@
+{
+	"name": "minter-typescript",
+	"version": "1.0.0",
+	"main": "dist/main.js",
+	"author": "Enjin",
+	"license": "MIT",
+	"private": false,
+	"scripts": {
+		"format": "prettier --config .prettierrc 'src/**/*.ts' --write",
+		"lint": "eslint .",
+		"clean": "rm -rf dist",
+		"prebuild": "npm run clean",
+		"build": "tsc",
+		"prestart": "npm run build",
+		"start": "node ."
+	},
+	"dependencies": {
+		"@polkadot/api": "^12.2.3",
+		"@polkadot/keyring": "^13.0.2",
+		"@polkadot/types": "^12.2.3",
+		"@polkadot/util": "^13.0.2",
+		"@polkadot/util-crypto": "^13.0.2",
+		"dotenv": "^16.3.1",
+		"node-cron": "^3.0.2"
+	},
+	"devDependencies": {
+		"@eslint/js": "^9.8.0",
+		"@types/node": "^20.7.0",
+		"@types/node-cron": "^3.0.9",
+		"eslint": "^9.8.0",
+		"globals": "^15.9.0",
+		"prettier": "^3.0.3",
+		"typescript": "^5.2.2"
+	}
+}

@@ -17,7 +17,7 @@ if(TOKEN_COUNT_IN_BATCH > 250) {
 }
 
 if (!BOT_KEY) {
-  console.error('BOT_PRIVATE_KEY env variable is not set');
+  console.error('BOT_KEY env variable is not set');
   process.exit(1);
 }
 
